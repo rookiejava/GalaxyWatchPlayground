@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tizen="clr-namespace:Xamarin.Forms.PlatformConfiguration.TizenSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="ButtonDemo.ButtonStylePage"
+             Title="Button">
+    <StackLayout>
+        <Label x:Name="label"
+               Text="Button Style"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+        <Button x:Name="button"
+                Text="Button"
+                ImageSource="xamarin.png"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                tizen:VisualElement.Style="default"
+                Clicked="OnButtonClicked" />
+        <Button Text="Change Style!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked" />
+    </StackLayout>
+</ContentPage>

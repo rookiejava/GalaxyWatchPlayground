@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ButtonDemo.ImageButtonPage"
+             Title="Button">
+    <StackLayout>
+        <Label x:Name="label"
+               Text="Image Button"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+        <ImageButton Source="tizen.png"
+               WidthRequest="100"
+               HeightRequest="100"
+               BackgroundColor="Transparent"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Clicked="OnButtonClicked"
+               BorderColor="Gray"
+               BorderWidth="2"
+               CornerRadius="50"
+               Aspect="AspectFit">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="1"/>
+                            <Setter Property="BorderColor" Value="Gray"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="Pressed">
+                        <VisualState.Setters>
+                            <Setter Property="Scale" Value="1.2"/>
+                            <Setter Property="BackgroundColor" Value="#40FFFFFF"/>
+                            <Setter Property="BorderColor" Value="#00B0EF"/>
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </ImageButton>
+    </StackLayout>
+</ContentPage>

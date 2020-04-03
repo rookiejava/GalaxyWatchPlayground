@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tizen="clr-namespace:Xamarin.Forms.PlatformConfiguration.TizenSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:cu="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             x:Class="ButtonDemo.ContentButtonPage"
+             Title="Button">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label x:Name="label"
+               Text="Content Button"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+        <cu:ContentButton x:Name="button"
+               Clicked="OnButtonClicked"
+               Pressed="OnButtonPressed"
+               Released="OnButtonReleased">
+            <cu:ContentButton.Content>
+                <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image x:Name="buttonBg" Source="button_bg.png" Opacity="0.25" Aspect="AspectFill" tizen:Image.BlendColor="Transparent" AbsoluteLayout.LayoutBounds=".5,.5,89,66" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <Image x:Name="buttonBorder" Source="button_border.png" Aspect="AspectFill" tizen:Image.BlendColor="DarkGreen" AbsoluteLayout.LayoutBounds=".5,.5,89,66" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                    <Image x:Name="buttonIcon" Source="home.png" tizen:Image.BlendColor="DarkGreen" AbsoluteLayout.LayoutBounds=".5,.5,36,36" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                </AbsoluteLayout>
+            </cu:ContentButton.Content>
+        </cu:ContentButton>
+    </StackLayout>
+</ContentPage>
