@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomFontDemo.CustomFontPage"
+             Title="Custom Font">
+    <StackLayout>
+        <!-- Default -->
+        <Label Text="Custom Font 한글" />
+        <!-- Custom Fonts -->
+        <Label Text="Custom Font 한글" FontFamily ="CuteFont-Regular" />
+        <Label Text="Custom Font 한글" FontFamily ="Dokdo-Regular" />
+        <Label Text="Custom Font 한글" FontFamily ="PTM55FT.ttf#PTMono-Regular" />
+        <Label Text="Custom Font 한글" FontFamily ="fa-regular-400.ttf#FontAwesome5Free-Regular" />
+        <!-- System Fonts -->
+        <Label Text="Custom Font 한글" FontFamily ="BreezeSans-Thin" />
+        <Label Text="Custom Font 한글" FontFamily ="BreezeSans-Bold" />
+    </StackLayout>
+</ContentPage>

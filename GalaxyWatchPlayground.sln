@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ButtonDemo", "ButtonDemo\Bu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IndicatorViewDemo", "IndicatorViewDemo\IndicatorViewDemo.csproj", "{DC5F953A-5605-4E16-82DE-0BC988E2A484}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomFontDemo", "CustomFontDemo\CustomFontDemo.csproj", "{7CC8F818-D866-40C5-AC6A-54075688C5EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DC5F953A-5605-4E16-82DE-0BC988E2A484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC5F953A-5605-4E16-82DE-0BC988E2A484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC5F953A-5605-4E16-82DE-0BC988E2A484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CC8F818-D866-40C5-AC6A-54075688C5EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CC8F818-D866-40C5-AC6A-54075688C5EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CC8F818-D866-40C5-AC6A-54075688C5EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CC8F818-D866-40C5-AC6A-54075688C5EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
